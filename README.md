@@ -110,3 +110,25 @@ return (
 ```
 
 ### 静态属性
+
+* 另外一种能够提高可读性和易用性的技术就是使用类的静态属性。它允许我们直接在类上调用方法。
+
+```js
+
+    // class 中静态属性
+    class Example {
+        static a='static';
+    }
+    // 调用
+    Example.a //static
+
+    // react中使用
+    import React from 'react';
+    import Item from 'item';
+    class App extends React.Component{
+        static Item = Item ;
+    }
+    // 调用
+    App.Item
+
+```
