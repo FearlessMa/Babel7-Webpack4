@@ -2,7 +2,7 @@
  * @Author: mhc 
  * @Date: 2018-10-08 21:03:20 
  * @Last Modified by: mhc
- * @Last Modified time: 2018-10-08 21:32:22
+ * @Last Modified time: 2018-10-08 21:59:11
  */
 
 const webpack = require('webpack');
@@ -20,8 +20,8 @@ module.exports = merge(common,{
             verbose: true,
             dry: false
         }),
-    ]
+    ],
     // optimization: {
     //     nodeEnv: 'production'
     // },
-})
+});

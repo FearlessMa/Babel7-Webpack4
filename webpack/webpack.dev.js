@@ -2,7 +2,7 @@
  * @Author: mhc 
  * @Date: 2018-10-08 20:28:50 
  * @Last Modified by: mhc
- * @Last Modified time: 2018-10-08 21:26:13
+ * @Last Modified time: 2018-10-08 22:03:37
  */
 
 const webpack = require('webpack');
@@ -21,13 +21,13 @@ module.exports = merge(common, {
         // compress: true,
         // 当出现编译器错误或警告时，在浏览器中显示全屏覆盖层。默认禁用。如果你想要只显示编译器错误：
         overlay: {
-            warnings: true,
+            // warnings: true,
             errors: true
         }
     },
-    optimization: {
-        nodeEnv: 'development'
-    },
+    // optimization: {
+    //     nodeEnv: 'development'
+    // },
     // 对于某些系统，监听大量文件系统会导致大量的 CPU 或内存占用。这个选项可以排除一些巨大的文件夹
     watchOptions: {
         ignored: /node_modules/
@@ -37,7 +37,7 @@ module.exports = merge(common, {
         hints: 'warning'
     },
     plugins: [
-        // mode为production时可以省略NamedModulesPlugin
+        // mode 为production 时可以省略NamedModulesPlugin
         //  development
         // 会将 process.env.NODE_ENV 的值设为 development。启用 NamedChunksPlugin 和 NamedModulesPlugin。
         // production
