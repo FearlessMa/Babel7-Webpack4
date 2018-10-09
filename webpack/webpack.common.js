@@ -2,7 +2,7 @@
  * @Author: mhc 
  * @Date: 2018-09-28 20:40:10 
  * @Last Modified by: mhc
- * @Last Modified time: 2018-10-08 21:56:33
+ * @Last Modified time: 2018-10-09 21:23:15
  */
 
 const path = require('path');
@@ -42,7 +42,8 @@ module.exports = {
     },
     resolve: {
         alias: {
-            src: path.resolve(__dirname, '../src')
+            src: path.resolve(__dirname, '../src'),
+            component: path.resolve(__dirname, '../src/component')
         },
         extensions: ['*', '.js', '.css', '.less', '.scss']
     },

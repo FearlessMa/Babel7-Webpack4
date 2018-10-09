@@ -1,0 +1,32 @@
+/*
+ * @Author: mhc 
+ * @Date: 2018-10-09 21:26:39 
+ * @Last Modified by: mhc
+ * @Last Modified time: 2018-10-09 21:57:47
+ */
+
+
+/* .tabs-header{
+    padding: 0 5px;
+} */
+.tabs-header>span{
+    padding: 0 20px;
+    border:1px solid #666666;
+    cursor: pointer;
+}
+.tabs-header>.tabs-header-active{
+    border-bottom-color: #ffffff;
+}
+.tabs-content{
+    width: 400px;
+    height: 300px;
+}
+.tabs-content>div{
+    width: 400px;
+    height: 300px;
+    display: none;
+    border:1px solid #666666;
+}
+.tabs-content>.active{
+    display: block;
+}
